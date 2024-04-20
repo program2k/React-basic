@@ -2,8 +2,14 @@
   background-color: #000;
 }
 
+.header-side {
+  background-color: #000;
+  height: 100vh;
+}
+
 .button {
   color: #fff;
+  text-decoration: none;
 }
 
 .text {

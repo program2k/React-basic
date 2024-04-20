@@ -20,19 +20,17 @@ const ModalEdit = ({ showModal, closeModal, selectedCountry }) => {
       description: editCountryState ? editCountryState.description : "",
     },
     validationSchema: Yup.object({
-      id: Yup.string().required("id is required"),
+      id: Yup.string().required("Id is required"),
       name: Yup.string().required("Name is required"),
       code: Yup.string().required("Code is required"),
       description: Yup.string().required("Description is required"),
     }),
     onSubmit: (values, { resetForm }) => {
-      console.log(values);
       dispatch(editCountry(values));
       resetForm();
       closeModal();
     },
   });
-
   return (
     <>
       <Modal show={showModal} onHide={closeModal}>

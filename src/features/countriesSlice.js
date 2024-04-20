@@ -25,8 +25,6 @@ export const countriesSlice = createSlice({
       const index = state.countries.findIndex(
         (country) => country.id === updatedCountry.id
       );
-      console.log("update", updatedCountry.id);
-      console.log("index", index);
       if (index !== -1) {
         state.countries[index] = updatedCountry;
       }

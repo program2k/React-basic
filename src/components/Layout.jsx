@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
         <button className="btn button">X</button>
       </div>
       <div class="row">
-        <div class="col-2 header">
+        <div class="col-2 header-side">
           <Link to="/home">
             <button className="btn button d-block">Home</button>
           </Link>
